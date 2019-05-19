@@ -1,5 +1,4 @@
 **/\.DS_Store
-dist/
 .serverless
 .webpack
 node_modules/
