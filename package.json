@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --open --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
   },
   "repository": {
     "type": "git",
@@ -18,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/shadowfalls/shadowfalls.github.io/issues"
   },
-  "homepage": "https://github.com/shadowfalls/shadowfalls.github.io#readme",
+  "homepage": "https://shadowfalls.github.io/shadowfalls.github.io",
   "devDependencies": {
     "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
@@ -40,6 +42,7 @@
     "axios": "^0.18.0",
     "bootstrap": "^4.3.1",
     "css-loader": "^2.1.1",
+    "gh-pages": "^2.0.1",
     "mini-css-extract-plugin": "^0.6.0",
     "node-sass": "^4.11.0",
     "react-disqus-comments": "^1.4.0",
