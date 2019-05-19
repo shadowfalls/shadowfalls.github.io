@@ -27,6 +27,12 @@ module.exports = {
             {
                 test: /\.(scss|css)$/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+            },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: [
+                    'file-loader'
+                ]
             }
         ]
     },
@@ -46,7 +52,7 @@ module.exports = {
         }),
         // remove this during production
         new webpack.HotModuleReplacementPlugin(),
-        new UglifyJsPlugin({ sourceMap: true })
+        // new UglifyJsPlugin({ sourceMap: true })
     ],
     optimization: {
         splitChunks: {
@@ -69,6 +75,9 @@ module.exports = {
     },
     mode: "development",
     devServer: {
-        hot: true,
-    }
+        historyApiFallback: true,
+        contentBase: './',
+        hot: true
+    },
+    devtool: 'source-map'
 };
