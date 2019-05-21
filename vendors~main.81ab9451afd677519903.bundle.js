@@ -740,8 +740,8 @@ module.exports = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BrowserRouter; });
-/* unused harmony export HashRouter */
+/* unused harmony export BrowserRouter */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HashRouter; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return Link; });
 /* unused harmony export NavLink */
 /* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7);
@@ -8429,4 +8429,4 @@ Collapse_Collapse.defaultProps = defaultProps;
 
 /***/ })
 ]]);
-//# sourceMappingURL=vendors~main.75390f7345e0190c3ff3.bundle.js.map
+//# sourceMappingURL=vendors~main.81ab9451afd677519903.bundle.js.map
