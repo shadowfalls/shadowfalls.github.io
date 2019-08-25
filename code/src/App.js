@@ -38,7 +38,7 @@ class App extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <Link className="nav-link" to={{ pathname: '/' }}>Topics</Link>
+                <Link className="nav-link" to={{ pathname: '/landing' }}>Topics</Link>
               </NavItem>
               <NavItem>
                 <Link className="nav-link" to={{ pathname: '/' }}>About me</Link>
@@ -50,6 +50,7 @@ class App extends Component {
         </div>
         <Switch>
           <Route exact path='/' component={LandingPage} />
+          <Route exact path='/landing' component={LandingPage} />
         </Switch>
       </span>
     </HashRouter>;
